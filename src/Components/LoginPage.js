@@ -54,6 +54,9 @@ export default function LoginPage() {
           </div>
           <button type="submit" className="btn login-btn">Login</button>
         </form>
+        <p>Demo credentials</p>
+        <p>User ~ user</p>
+        <p>Password ~ password</p>
       </div>
     </div>
   );
