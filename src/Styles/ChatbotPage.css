@@ -1,0 +1,143 @@
+.chatbot-container {
+  min-height: 100vh;
+  padding: 32px;
+  background: linear-gradient(to right, #011E2B, #01684A);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.chatbot-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.fruit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 24px;
+}
+
+.fruit-card {
+  background-color: #f8eaff;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.fruit-card:hover {
+  transform: scale(1.05);
+}
+
+.fruit-image {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+.fruit-name {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.chatbot-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.message {
+  padding: 8px 16px;
+  border-radius: 16px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.message.user {
+  align-self: flex-end;
+  background-color: #00EC64;
+  color: #011E2B;
+  font-weight: bolder;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background-color: #f8eaff;
+  color: #011E2B;
+  font-weight: bolder;
+}
+
+.message.bot.typing {
+  background-color: #f8eaff;
+  color: #011E2B;
+  font-style: italic;
+}
+
+.chat-input-form {
+  display: flex;
+  margin-top: 16px;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #011E2B;
+  border-radius: 10px 0 0 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.send-button {
+  padding: 8px 16px;
+  background-color: #00EC64;
+  color: #011E2B;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.send-button:hover {
+  background-color: #01684A;
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}

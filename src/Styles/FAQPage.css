@@ -1,0 +1,128 @@
+.faq-container {
+  min-height: 100vh;
+  padding: 32px;
+  background: linear-gradient(to right, #011E2B, #01684A);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.faq-card {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.faq-title {
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 24px;
+  color: #011E2B;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-item {
+  /* border-bottom: 1px solid #e5e7eb; */
+  padding-bottom: 16px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #1a202c;
+  padding: 8px 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+.faq-answer-container {
+  margin-top: 8px;
+}
+
+.faq-answer {
+  color: #01684A;
+  font-weight: bolder;
+  margin-bottom: 12px;
+}
+
+.faq-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.faq-form {
+  margin-top: 32px;
+  border-top: 1px solid #000000;
+  padding-top: 24px;
+}
+
+.faq-form h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #011E2B;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 500;
+  color: #011E2B;
+}
+
+.form-group input,
+.form-group textarea {
+  width: calc(100% - 24px);
+  padding: 8px;
+  border: 1px solid #011E2B;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn-cancel {
+  margin-left: 8px;
+}
+.back-link {
+  display: block;
+  text-align: center;
+  margin-top: 32px;
+  text-decoration: none;
+}
+
+
+

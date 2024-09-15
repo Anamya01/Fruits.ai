@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import LoginPage from './Components/LoginPage';
+import HomePage from './Components/HomePage';
+import FAQPage from './Components/FAQPage';
+import AboutPage from './Components/AboutPage';
+import ErrorBoundary from './Components/ErrorBoundary';
+import './Styles/base.css';
+import TranslatorPage from './Components/TranslatorPage';
+import ChatbotPage from './Components/ChatbotPage';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary>
+      <Router>
+        <Routes>
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/faq" element={<FAQPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/translator" element={<TranslatorPage />} />
+          <Route path="/chat" element={<ChatbotPage />} />
+          <Route path="/" element={<Navigate replace to="/login" />} />
+          <Route path="*" element={<div>404: Not Found</div>} />
+        </Routes>
+      </Router>
+    </ErrorBoundary>
   );
 }
-
-export default App;
